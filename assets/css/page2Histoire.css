@@ -1,0 +1,254 @@
+:root {
+  --bleu: #1a365e;
+  --bleuclair: #c5e4f6;
+  --violet: #d8d2ff;
+  --orange: #ffd6bc;
+  --jaune: #fff8b5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ .histoire{
+  text-align: center;
+  padding-top: 50px;
+} 
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.font-sizeP {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.section-support,
+.section-team,
+.section-news {
+  width: 100%;
+  padding: 1rem;
+  height: 50vh;
+}
+
+.support-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Partenaire */
+.section-support {
+  background-color: #fff;
+}
+
+.support {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.support figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.support figcaption {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.support img {
+  width: 150px;
+  border-radius: 50%;
+}
+/* Carousel */
+.section-news {
+  height: 50vh;
+  background-color: var(--bleu);
+  color: #fff;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+}
+
+.owl-nav {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translatey(-50%);
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+.owl-carousel .item img {
+  max-width: 100%;
+  display: block;
+}
+/* Team */
+.team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-profile {
+  margin-bottom: 5rem;
+  position: relative;
+  background-color: var(--bleuclair);
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /* Assure que la silhouette dépasse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-profile .avatar1 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  background-image: url("./image/avatar2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-profile .avatar2 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  background-image: url("./image/teamavatar.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-profile .avatar3 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  background-image: url("./image/avatar3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  margin-top: 110px;
+  color: var(--bleu);
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-info span img {
+  width: 3rem;
+}
+
+.card-info p {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .carousel-wrap {
+    width: 50%;
+  }
+
+  .support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-support,
+  .section-team,
+  .section-news {
+    max-width: 480px;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrap {
+    width: 90%;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

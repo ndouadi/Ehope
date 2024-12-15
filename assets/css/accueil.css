@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.fond_page_home {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", serif;
+}
+
+.div_home {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7b9ac5;
+    color: #fff;
+    height: 100vh;
+}
+
+/* .textgauche {} */
+
+.fond_page_home .divDedroite img {
+    margin-top: 100px;
+    margin-top: 67px;
+}
+
+.divDedroite {
+    margin-top: 120px;
+}
+
+.divDegauche h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.divDegauche h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 90px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 45px;
+}
+
+.hero-text p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.divDegauche a {
+    color: #fff;
+
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+}
+
+.divDegauche a:hover {
+    background: transparent;
+
+    transform: translateX(8px);
+}
+
+.divDegauche img {
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+}
+
+.liens-home {
+    display: flex;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+}
+
+.homeimg {
+    padding-top: 10px;
+}
+
+.divDegauche h1 {
+    text-align: right;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.divDegauche h4 {
+    text-align: right;
+    font-size: 32px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.divDegauche {
+    padding: 150px 150px 0 150px;
+}
+
+.divDegauche h4 {
+    margin-top: 10%;
+}
+
+.gaucheTelephone {
+    width: 50%;
+}
+
+.gaucheTelephone img {
+    /* background-color: aqua; */
+    margin: 15%;
+    margin-left: 30%;
+}
+
+.droiteTelephone p {
+    margin-top: 250px;
+    line-height: 1.4;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 600px;
+}
+
+.milieu_home {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fafafa;
+}
+
+.divphone {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.divphone img {
+    height: 500px;
+    width: 250px;
+    border: solid black 1px;
+}
+
+.phone1 {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.presentation_home h4 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#imageid {
+    margin-right: 180px;
+}
+
+.image-home {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.droiteblock1 h1 {
+    font-weight: 300;
+    line-height: 85px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.block2sdesti1 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    gap: 40px;
+}
+
+.block2sdesti1 .divblockdroite1 {
+    width: 35%;
+    height: 500px;
+    margin-top: 10%;
+}
+
+.block2sdesti1 .divblockgauche1 {
+    width: 35%;
+    height: 400px;
+    /* background-color: red; */
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.divblockdroite1 h1 {
+    font-weight: 600;
+    line-height: 85px;
+    padding: 15px;
+}
+
+.divblockdroite1 .droitetexte {
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.divblockdroite1 .ligne {
+    border-bottom: 1px solid black;
+    width: 10%;
+    margin-left: 30px;
+}
+
+.divblockgauche1 img {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 250px;
+    border: solid black 1px;
+}
+
+.block2sdesti2 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2Emmy {
+    background-image: linear-gradient(to top,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0)),
+        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+        url("../image/accueil/foret-section-constat.jpg");
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCodeSection2 {
+    display: block;
+    align-items: center;
+    height: 350px;
+    width: 600px;
+}
+
+.image-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #000;
+    margin-top: 20%;
+}
+
+.section2Emmy {
+    background-color: #7b9ac5;
+}
+
+.image-home video {
+    height: 500px;
+    width: 500px;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.section2Abou {
+    padding: 2rem;
+}
+
+.largeCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px;
+}
+
+.leftColumn,
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 2;
+}
+
+.texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px;
+}
+
+.phone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone a img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.numbers {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bleu);
+    margin-top: 0.5rem;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--violet);
+}
+
+.h2Abou {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.containerContact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* margin-top: 40%; */
+}
+
+.contact-info {
+    background-color: #d9d9f9;
+    padding: 20px;
+    flex: 1;
+}
+
+.contact-info h1 {
+    margin: 0 0 20px;
+    font-size: 10px;
+    color: #091b31;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #1e2a39;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #1e2a39;
+    font-weight: bold;
+}
+
+.contact-info .icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.form-section {
+    background-color: #fff;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    border: 2px solid #000;
+}
+
+.form-section button {
+    background-color: #1e2a39;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    align-self: flex-end;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.form-section button:hover {
+    background-color: #2b3d4f;
+}
+
+@media (min-width: 1024px) {
+    .containerContact {
+        height: 100%;
+    }
+
+    .contact-info h1 {
+        font-size: 3.5em;
+    }
+
+    .form-section input,
+    .form-section textarea {
+        font-size: 1.4em;
+    }
+
+    .form-section button {
+        font-size: 1.4em;
+    }
+}
+
+/* Media Query pour les écrans de téléphone */
+@media screen and (max-width: 768px) {
+
+    /* Ajuster le fond de la page */
+    .fond_page_home {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Réorganiser la disposition générale */
+    .div_home {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Section gauche (texte et contenu) */
+    .divDegauche {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .divDegauche h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .divDegauche h4 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .divDegauche a {
+        font-size: 12px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .divDegauche img {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Section droite (images) */
+    .divDedroite img {
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section "milieu_home" */
+    .milieu_home {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Téléphones et images */
+    .divphone {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .divphone img {
+        height: 300px;
+        width: 150px;
+    }
+
+    .gaucheTelephone img {
+        /* background-color: aqua; */
+        margin: initial;
+    }
+
+    .imgCodeSection2,
+    .imgCodeSection2 img {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .section2Abou .largeCard {
+        flex-direction: column;
+        /* Les éléments passent en colonne sur les petits écrans */
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .section2Abou .leftColumn,
+    .section2Abou .rightColumn {
+        max-width: 100%;
+        /* Les colonnes prennent toute la largeur */
+    }
+
+    .section2Abou .phone {
+        margin-top: 1rem;
+        /* Espacement au-dessus de l'image */
+        max-width: 250px;
+        /* Taille réduite de l'image */
+    }
+
+    .section2Abou .texts {
+        flex-direction: column;
+        /* Les textes et numéros sont alignés en colonne */
+        align-items: flex-start;
+        /* Aligne les éléments à gauche */
+    }
+
+    .section2Abou .numbers {
+        font-size: 1.2rem;
+        /* Réduit la taille des numéros sur mobile */
+    }
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section2Abou .largeCard {
+        flex-direction: row;
+        /* Les éléments sont en ligne */
+        justify-content: center;
+    }
+
+    .section2Abou .leftColumn,
+    .section2Abou .rightColumn {
+        max-width: 45%;
+        /* Les colonnes occupent 45% de l'écran */
+    }
+
+    .section2Abou .phone {
+        margin-top: 0;
+        max-width: 300px;
+        /* Ajuste la taille de l'image */
+    }
+
+    .section2Abou .texts {
+        flex-direction: row;
+        /* Les textes et numéros sont alignés horizontalement */
+    }
+
+    .section2Abou .numbers {
+        font-size: 1.4rem;
+        /* Taille des numéros adaptée */
+    }
+}
+
+/* Desktop (grand écran) */
+@media (min-width: 1025px) {
+    .section2Abou .largeCard {
+        flex-direction: row;
+        gap: 3rem;
+        /* Espacement plus grand sur grand écran */
+    }
+
+    .section2Abou .leftColumn,
+    .section2Abou .rightColumn {
+        max-width: 30%;
+        /* Les colonnes occupent 30% de l'écran */
+    }
+
+    .section2Abou .phone {
+        max-width: 400px;
+        /* Plus grande taille pour l'image */
+    }
+
+    .section2Abou .texts {
+        flex-direction: row;
+        /* Maintient l'alignement des textes et numéros en ligne */
+    }
+
+    .section2Abou .numbers {
+        font-size: 1.5rem;
+        /* Taille plus grande pour les numéros */
+    }
+}

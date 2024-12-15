@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('index.css');
+*{
+  margin: 0;
+}
+:root {
+  --bleu : #1A365E;
+  --bleuclair : #C5E4F6;
+  --violet: #D8D2FF;
+  --orange: #FFD6BC;
+  --jaune: #FFF8B5;
+}
+
+/* debut header */
+.headerEhope {
+    background-color: white;
+    margin: auto;
+}
+
+.navbarEhope {
+  display: flex;  
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+}
+
+#navLogo img {
+  margin: auto; 
+  width: 80px;
+  height: 50px;
+}
+
+#navLogo{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bleu);
+}
+
+.buttonLinkEhope {
+  text-decoration: none;
+  background-color: var(--bleu);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.buttonLinkEhope:hover {
+  background-color: var(--orange);
+  color: var(--bleu);
+}
+.clickNavEhope{
+  padding-right: 30px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+
+.clickNavEhope:hover {
+  color: var(--orange);
+}
+/* fin header */
+
+
+/* debut footer */
+.footerContainer {
+  background-color: white;
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.footerContainer li{
+  list-style-type: none;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.socialLinks{
+  display: flex; 
+  margin: 0px 450px;
+  padding: 10px 0px 20px 0px;
+} 
+
+.socialLinks i{
+  font-size: 30px;
+  padding: 0px 40px 0px 40px;
+}
+
+#footLogo {
+  margin: auto; 
+  width: 80px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.h4footer{
+  padding: 40px 0px 5px 0px;
+}
+
+.fa-brands:hover {
+  color: var(--orange);
+}
+/* fin footer */
+
+/* debut du responsive */
+@media screen and (max-width: 768px) {
+  .navbarEhope {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .navbarLinksEhope {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding-left: 10px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .socialLinks i {
+    font-size: 24px; 
+  }
+
+  .buttonLinkEhope {
+    width: 100%; 
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navLogo img {
+    width: 60px;
+    height: 40px;
+  }
+
+  .socialLinks {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .footerContainer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .buttonLinkEhope {
+    padding: 8px;
+  }
+}
+/* fin du responsive */
+
+/* menu hamburger */
+/* Par défaut : le bouton hamburger est masqué */
+#hamburger {
+  display: none; /* Caché sur desktop */
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: flex; /* Affiche le bouton en mode mobile */
+    width: 40px; /* Taille du bouton */
+    height: 40px;
+    border-radius: 50%; /* Forme ronde */
+    background: var(--bleu); /* Couleur de fond */
+    color: white; /* Couleur de l'icône */
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Alignement en haut à droite */
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Taille de l'icône à l'intérieur */
+  #hamburger i {
+    font-size: 20px;
+  }
+
+  /* Masque les liens de navigation par défaut */
+  #navbarLinksEhope {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  /* Affiche les liens lorsque la classe 'active' est ajoutée */
+  #navbarLinksEhope.active {
+    display: flex;
+  }
+
+  /* Ajuste le bouton "Télécharger l'application" */
+  .buttonLinkEhope {
+    padding: 5px 0px; /* Réduit le padding pour un bouton plus petit */
+    font-size: 14px; /* Adapte la taille du texte */
+    border-radius: 5px;
+  }
+}
